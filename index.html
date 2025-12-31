@@ -1,32 +1,83 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Website in ontwikkeling</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Under Construction</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       height: 100vh;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa, #e4e8ee);
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #f5f5f5;
-      font-family: Arial, sans-serif;
     }
-    .box {
+
+    .card {
       background: #ffffff;
-      padding: 50px;
-      border-radius: 12px;
+      padding: 48px 56px;
+      border-radius: 16px;
       text-align: center;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+      max-width: 420px;
+      width: 90%;
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    .emoji {
+      font-size: 42px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin: 0 0 12px;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    p {
+      font-size: 16px;
+      color: #4b5563;
+      margin: 0 0 24px;
+    }
+
+    .domain {
+      font-size: 14px;
+      color: #9ca3af;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h1>🚧 Website in ontwikkeling</h1>
-    <p>yorrickvandergugten.com<br>Kom binnenkort terug.</p>
+  <div class="card">
+    <div class="emoji">🚧</div>
+    <h1>Website under construction</h1>
+    <p>We’re working on something great.<br />Check back soon.</p>
+    <div class="domain">yorrickvandergugten.com</div>
+  </div>
+</body>
+</html>
   </div>
 </body>
 </html>
